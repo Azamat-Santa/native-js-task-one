@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>native js task one</title>
+</head>
+
+<body onload="bodyLoad()">
+    <!-- Задача #1 -->
+    <div class="question">
+        <div class="question__left">
+            <h3>Задача #1</h3>
+            <p>
+                for (var i = 0; i < 10; i++) {<br>
+                    setTimeout(function() { <br>
+                        console.log(i); <br>
+                    } <br>
+                }; <br>
+                Что выведет консоль и почему?
+                
+            </p>
+
+            <div class="answer">
+                <h3>Ответ</h3>
+                <p style="font-weight: bold;">
+                    когда setTimout выполниться  цикл завершит 
+                    свою работу и i будет равен 10, после чего будет выполнена
+                    функция console.log(i) которая будет уже равна 10.
+
+
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <!-- Задача #2/1 -->
+
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задача #2/1</h3>
+            <p>
+                Write a JavaScript program to display the current day and time in the following format. <br>
+                Sample Output :
+                Today is : Friday.
+                Current time is : 4 PM : 50 : 22
+            </p>
+
+            <div class="answer">
+                <h3>Ответ</h3>
+                <div class="day"></div>
+                <div class="time-now"></div>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 05-02-2022 234646.jpg" alt="">
+        </div>
+    </div>
+
+    
+
+    <hr>
+    <!-- Задача #2/2 -->
+    <div class="question">
+    <div class="question__left">
+        <h3>Задача #2/2</h3>
+        <p>
+            Write a JavaScript function that reverse a number. <br>
+            Example x = 32243; <br>
+            Expected Output : 34223 <br>
+        </p>
+
+        <div class="answer">
+            <h3>Ответ</h3>
+            <input type="number" class="task-two-two" placeholder="Введите число">
+            <button onclick="reverseNumber()"> вывод в консоли</button>
+        </div>
+    </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 05-02-2022 235959.jpg" alt="">
+        </div>
+    </div>
+
+    <hr>
+    <!-- Задача #2/3 -->
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задача #2/3</h3>
+            <p>
+                Write a JavaScript program to calculate the factorial of a number. In mathematics, the factorial of a
+                non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. <br>
+                For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+                <input type="number" class="task-two-three" placeholder="Введите число">
+                <button onclick="factorial()"> вывод в консоли</button>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 000221.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+
+    <!-- Задача #2/4 -->
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задача #2/4</h3>
+            <p> Write a JavaScript program to test the first character of a string is uppercase or not
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+                <input type="text" class="task-two-four" placeholder="Введите слово">
+                <button onclick="letterCheck()"> вывод в консоли</button>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 000505.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+
+    <!-- Задача #2/5 -->
+
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задача #2/5</h3>
+            <p>Write a simple JavaScript program to join all elements of the following array into a string. <br>
+                Sample array : myColor = ["Red", "Green", "White", "Black"]; <br>
+                Expected Output : <br>
+                "Red,Green,White,Black" <br>
+                "Red+Green+White+Black" <br>
+    
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+    
+                <button onclick="concatenateStrings()"> вывод в консоли</button>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 000606.jpg" alt="">
+        </div>
+       
+    </div>
+    <hr>
+
+    <!-- Задача #2/6 -->
+
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задача #2/6</h3>
+            <p>Write a JavaScript function to get the month name from a particular date.
+                Test Data : <br>
+                console.log(month_name(new Date("10/11/2009"))); <br>
+                console.log(month_name(new Date("11/13/2014"))); <br>
+                Output : <br>
+                "October" <br>
+                "November" <br>
+    
+    
+            </p>
+            <div class="answer">
+                <h3>Ответ</h3>
+                <input type="text" placeholder="Введите дату " class="input-two-six">
+                <button class="month_name"> вывод в консоли</button>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 000758.jpg" alt="">
+        </div>
+       
+    </div>
+    <hr>
+
+    <!-- Задача #2/7 -->
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задача #2/7</h3>
+            <p>
+                Write a JavaScript program that accept two integers and display the larger.
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+                <div style="display: flex;">
+                    <input type="number" class="task-two-three-input" style="margin-right: 10px;"
+                        placeholder="первое число">
+                    <input type="number" class="task-two-three-input-two" placeholder="второе число">
+                </div>
+    
+                <button onclick="largerNumber()" style="margin-top:10px;"> вывод в консоли</button>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 000924.jpg" alt="">
+        </div>
+        
+    </div>
+    <hr>
+
+    <!-- Задача #2/8 -->
+
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задача #2/8</h3>
+            <p>
+                Write a JavaScript program to draw a smile
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+                <canvas id="mycanvas" width="400" height="200"></canvas>
+            </div>
+        </div>
+        <div class="question__right" style="height:80vh; width: 40%;">
+            <img src="./img/Скриншот 06-02-2022 001453.jpg" alt="" >
+        </div>
+        
+    </div>
+    <hr>
+
+    <!-- Задание 1   -->
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задание 1</h3>
+            <p>
+                На странице есть верстка:
+    
+                <div id="string-1">Ядра в вёдра, выдру в тундру!</div>
+                <div id="string-2">Выдрав с выдры в тундре гетры</div>
+                <div id="string-3">В недрах тундры, выдры в гетрах </div>
+                <div id="string-4">Вытру гетрой выдре морду </div>
+                <div id="string-5">Тырят в вёдра ядра кедров!</div>
+                <div id="string-6">Вытру выдрой ядра кедров</div>
+                <br><br>
+                Необходимо поочередно обратиться к каждому тэгу в нужном порядке, и вывести их содержимое в консоль, чтобы
+                получилась осмысленная скороговорка.
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+                <button onclick="taskOne()"> вывод в консоли</button>
+    
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 002222.jpg" alt="">
+        </div>
+       
+    </div>
+    <hr>
+
+
+    <!--Задание 2 -->
+
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задание 2</h3>
+            <p>
+                На странице есть верстка <br>
+    
+                <div class="element">Element 1</div>
+                <div class="element">Element 2</div>
+                <div class="element">Element 3</div>
+                <div class="element">Element 4</div>
+                <div class="element">Element 5</div>
+                <div class="element">Element 6</div>
+                <br>
+    
+                С помощью JS необходимо первым трем элементам задать красный цвет текста, а остальным трем - зеленый.
+    
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+                <button onclick="taskTwo()"> изменить текст</button>
+    
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 002334.jpg" alt="">
+        </div>
+        
+    </div>
+    <hr>
+
+    <!--Задание 3 -->
+
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задание 3</h3>
+            <p>
+                На странице есть контейнер &lt;ol id="todo-list"&gt;&lt;/ol&gt;, необходимо с помощью цикла добавить в него
+                пять задач (элементов &lt;li&gt;) с классом task и текстом, взятым из массива задач из пяти элементов:
+    
+                var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+    
+    
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+    
+                <button onclick="renderTodo()"> запустить функцию</button>
+                <ol id="todo-list">
+    
+                </ol>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 002605.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+
+
+
+    <!--Задание 4 -->
+
+
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задание 4</h3>
+            <p>
+                На странице есть следующая разметка:
+    
+                <article>
+                    <h3>What is Lorem Ipsum?</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                    <h3>Where does it come from?</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. The first line of Lorem Ipsum,
+                        "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. from "The Extremes of Good and
+                        Evil" by Cicero</p>
+                    <h3>Why do we use it?</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as opposed to using 'Content here, content here', making it look like
+                        readable English.</p>
+                </article>
+    
+                Вам необходимо с помощью JavaScript вставить после каждого тега &lt;p&gt; тег &lt;hr&gt;, для визуального
+                отделения абзацев друг от друга.
+    
+    
+    
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+    
+                <button onclick="taskFour()"> запустить функцию</button>
+                <ol id="todo-list">
+    
+                </ol>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 002726.jpg" alt="">
+        </div>
+        
+    </div>
+    <hr>
+
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задание 5</h3>
+        <p>
+            Дана такая разметка: <br>
+            <div id="cart-items">
+                <div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+                <div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+                <div class="item">Bread<span class="qty">x 2</span></div>
+                <div class="item">Cheese<span class="qty">x 1</span></div>
+                <div class="item">Chocolate bar<span class="qty">x 3</span></div>
+            </div>
+            <br>
+            Необходимо с помощью JavaScript удалить элемент "Cola 1.5 l" и заменить товар "Chocolate bar" на "Canned
+            Fish", количеством 4 штуки.
+
+
+
+        </p>
+
+        <div class="answer">
+            <h3>Ответ</h3>
+
+            <button onclick="taskFive()"> запустить функцию</button>
+        </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 002833.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+
+    <div class="question">
+        <div class="question__left">
+            <h3>Задание 6</h3>
+            <p>
+    
+                Напишите программу для создания списка задач, которые будет вводить пользователь:
+                <br> <br>
+                Для каждого пункта: <br>
+                Запрашивайте содержимое пункта у пользователя с помощью prompt.
+                Создавайте пункт и добавляйте его к UL.
+                Процесс прерывается, когда пользователь нажимает "Отмена" или вводит пустую строку.
+    
+                <br>
+    
+            </p>
+    
+            <div class="answer">
+                <h3>Ответ</h3>
+    
+                <button onclick="taskSix()"> запустить функцию</button>
+    
+                <ul class="todo-task"></ul>
+            </div>
+        </div>
+        <div class="question__right">
+            <img src="./img/Скриншот 06-02-2022 002936.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
